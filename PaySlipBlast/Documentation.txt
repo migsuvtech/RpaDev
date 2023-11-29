@@ -1,0 +1,48 @@
+Documentation
+
+Install
+pip install gspread pandas oauth2client
+pip install xlsxwriter
+pip install openpyxl
+pip install xlsx2pdf
+
+Create a credentials.json key
+To obtain the `credentials.json` file required for accessing Google Sheets via API, you'll need to create a project in the Google Developers Console and generate credentials for that project. Here are the steps to do so:
+
+1. **Create a Project:**
+   - Go to the [Google Developers Console](https://console.developers.google.com/).
+   - Click on "Select a project" at the top of the page and then click on the "New Project" button.
+   - Give your project a name and click "Create".
+
+2. **Enable Google Sheets API:**
+   - In the dashboard, select your project (the one you just created).
+   - In the left sidebar menu, click on "Enable APIs and Services".
+   - Search for "Google Sheets API" and click on it.
+   - Click the "Enable" button.
+
+3. **Create Service Account Credentials:**
+   - Still in the dashboard, go to "Credentials" in the left sidebar.
+   - Click on "Create credentials" and select "Service account".
+   - Fill out the necessary information for your service account.
+   - Under "Role", assign the service account the role of "Project" -> "Editor" or any relevant permissions based on your needs.
+   - Click "Continue" and then "Done".
+
+4. **Generate and Download Credentials:**
+   - Find your newly created service account in the "Service Accounts" section under "Credentials".
+   - Click on your service account email.
+   - Navigate to the "Keys" tab and click on "Add Key" -> "Create new key".
+   - Choose the JSON key type and click "Create". This will download a JSON file containing your credentials (`credentials.json`).
+
+5. **Use `credentials.json` in your Python code:**
+   - Place the downloaded `credentials.json` file in the directory where you're running your Python script.
+   - Modify the Python script shared earlier, replacing `'credentials.json'` with the correct path to your downloaded credentials file.
+
+By following these steps, you'll obtain the `credentials.json` file required to authenticate and access Google Sheets through the Google Sheets API in your Python code.
+
+Service Account Credentials
+    Service Account Name
+        DownloadGsheet
+    Service Account ID
+        downloadgsheet@downloadgsheet-406602.iam.gserviceaccount.com
+    Oauth 2 Client ID
+        102638343035976612589

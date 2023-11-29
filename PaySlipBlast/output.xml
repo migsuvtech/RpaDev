@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.4 on win32)" generated="20231129 17:28:01.691" rpa="false" schemaversion="3">
+<suite id="s1" name="PaySlipRobot" source="c:\Users\lyka_guest\OneDrive\Documents\RPA\RpaDev\PaySlipBlast\PaySlipRobot.robot">
+<test id="s1-t1" name="Test Function" line="30">
+<kw name="Converting_to_PDF">
+<kw name="Convert SheetPdf" library="PayslipEmailBlast">
+<arg>ExcelFile</arg>
+<msg timestamp="20231129 17:28:06.057" level="FAIL">AttributeError: module 'openpyxl.worksheet' has no attribute 'export_to_pdf'</msg>
+<status status="FAIL" starttime="20231129 17:28:06.010" endtime="20231129 17:28:06.064"/>
+</kw>
+<status status="FAIL" starttime="20231129 17:28:06.010" endtime="20231129 17:28:06.064"/>
+</kw>
+<status status="FAIL" starttime="20231129 17:28:06.009" endtime="20231129 17:28:06.065">AttributeError: module 'openpyxl.worksheet' has no attribute 'export_to_pdf'</status>
+</test>
+<doc>Download and send Payslip</doc>
+<status status="FAIL" starttime="20231129 17:28:01.707" endtime="20231129 17:28:06.068"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="PaySlipRobot">PaySlipRobot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
